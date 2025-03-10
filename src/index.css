@@ -1,0 +1,16 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientAnimation {
+  0% { background: linear-gradient(45deg, #1e3a8a, #000); }
+  25% { background: linear-gradient(45deg, #2563eb, #1e3a8a); }
+  50% { background: linear-gradient(45deg, #9333ea, #2563eb); }
+  75% { background: linear-gradient(45deg, #db2777, #9333ea); }
+  100% { background: linear-gradient(45deg, #1e3a8a, #000); }
+}
+.animate-gradient {
+  animation: gradientAnimation 5s infinite linear;
+  background-size: 200% 200%;
+}
